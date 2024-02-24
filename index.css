@@ -1,39 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter:wght@700&family=Roboto:wght@400;500&display=swap');
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 
-body{
-    width:100vw;
-    height:100vh;
+
+.main{
+    height: 100vh;
     background-color: #3f4065;
     display: grid;
     place-content: center;
+
 }
 
-.main{
-width:30vw;
-background-color: white;
-margin:auto;
+.calc{
+    
+    max-width:400px;
+    background-color: transparent;
 }
 
 .display{
+    font-family: Inter;
     background-color: #181F32;
     color:#FFFFFF;
     margin-bottom: 16px;
-    /* height:60px; */
     padding:32px 16px;
     text-align: right;
-    font-size: 55px;
+    font-size: 3.5rem;
     border-radius: 12px;
+    line-height: 4.5rem;
+    overflow:auto;
+    
+    
+
 }
 
 .control-wrapper{
     background-color:#252D44;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 4; */
     gap:16px;
     padding:16px;
     border-radius: 12px;
@@ -41,6 +49,11 @@ margin:auto;
     font-weight: bolder;
     
 
+}
+
+.del{
+    background-color:#647299;
+    color:white;
 }
 
 .key-button{
